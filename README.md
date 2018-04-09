@@ -43,7 +43,7 @@ Warrior abilities:
 -	Whriling Axe(30 rp) – throw axe into nearest enemy, deal additional 2d6 damage, cd 2 turns, apply regular attack to this unit
 -	Stand my ground(20 rp), cd 4 turns, gain 50 HP shield for 2 turns
 
-#If you want play this game you need to do next steps:
+# If you want play this game you need to do next steps:
 1. Install Maven.
 2. git this project.
 3. build maven project ```mvn package```.
