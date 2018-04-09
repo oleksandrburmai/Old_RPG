@@ -3,8 +3,8 @@ package model.team;
 import lombok.Getter;
 import lombok.Setter;
 import model.hero.Hero;
+import model.hero.HeroRanks;
 import model.profession.ProfessionMap;
-import util.ScannerUtil;
 import util.input.InputData;
 
 @Getter
@@ -16,16 +16,26 @@ public class Team {
 
     public void createTeam() {
         Hero[] heroes = new Hero[TEAM_MEMBERS];
-        for (int i = 0; i < TEAM_MEMBERS; i++) {
-            heroes[i] = createHero();
+        heroes[0] = createLiederHero();
+        for (int i = 1; i < TEAM_MEMBERS; i++) {
+            System.out.println("Create " + i + " comrade hero");
+            heroes[i] = createComradeHero();
         }
         this.heroes = heroes;
     }
 
-    private Hero createHero() {
+    private Hero createComradeHero() {
         String heroName = InputData.getHeroName();
         String race = InputData.getRaceName();
-        return new Hero(heroName,
+        return new Hero(heroName, HeroRanks.COMRADE,
+                ProfessionMap.getProfession().get(race).get(InputData.getProfessionName(race)));
+    }
+
+    private Hero createLiederHero() {
+        System.out.println("Create leader hero");
+        String heroName = InputData.getHeroName();
+        String race = InputData.getRaceName();
+        return new Hero(heroName, HeroRanks.LEADER,
                 ProfessionMap.getProfession().get(race).get(InputData.getProfessionName(race)));
     }
 }

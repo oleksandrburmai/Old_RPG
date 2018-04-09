@@ -17,9 +17,10 @@ public class Hero {
     private int agility;
     private int concentration;
     private int health;
+    private HeroRanks heroRank;
 
 
-    public Hero(String heroName, Race race) {
+    public Hero(String heroName, HeroRanks rank, Race race) {
         this.heroName = heroName;
         this.raceName = race.getRaceName();
         this.professionName = race.getProfessionName();
@@ -28,6 +29,7 @@ public class Hero {
         this.intellect = race.getIntellect();
         this.agility = race.getAgility();
         this.concentration = race.getConcentration();
+        this.heroRank = rank;
     }
 
 }

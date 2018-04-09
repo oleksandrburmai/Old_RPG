@@ -1,5 +1,6 @@
 package util.input;
 
+import model.hero.HeroRanks;
 import model.profession.ProfessionMap;
 import util.ScannerUtil;
 
@@ -32,5 +33,18 @@ public class InputData {
     public static String getHeroName() {
         System.out.println("Enter hero name");
         return ScannerUtil.getString();
+    }
+
+    public static HeroRanks getHeroRank() {
+        System.out.println("Choice one of this rank for you hero [Comrade]");
+        while (true) {
+            String rankName = ScannerUtil.getString();
+            for (HeroRanks rank : HeroRanks.values()) {
+                if (rankName.equalsIgnoreCase(rank.getRank())) {
+                    return rank;
+                }
+            }
+            System.out.println("Choice wrong rank");
+        }
     }
 }
