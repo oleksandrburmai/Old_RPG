@@ -1,5 +1,6 @@
 
 import model.team.Team;
+import util.output.OutPutData;
 
 
 public class App {
@@ -7,7 +8,7 @@ public class App {
         Team team = new Team();
         team.createTeam();
         for (int i = 0; i < 3; i++) {
-            System.out.println(team.getHeroes()[i].getHeroName() + " " + team.getHeroes()[i].getProfessionName());
+            OutPutData.printHeroInfo(team, i);
         }
 
     }
