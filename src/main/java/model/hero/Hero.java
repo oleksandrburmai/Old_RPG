@@ -41,15 +41,15 @@ public class Hero {
         this.ragePoint = calculateRage();
     }
 
-    public double calculateHealth() {
+    private double calculateHealth() {
         return START_HEALTH + this.stamina * 2;
     }
 
-    public double calculateMana() {
+    private double calculateMana() {
         return START_MANA_POINT + this.intellect * 2;
     }
 
-    public double calculateRage() {
+    private double calculateRage() {
         return START_RAGE_POINT + this.agility * 4;
     }
 

@@ -1,7 +1,7 @@
 import model.team.Team;
 import util.output.OutPutData;
 
-public class Game {
+class Game {
     public void startGame() {
         Team team = new Team();
         OutPutData.printDatumInfo();

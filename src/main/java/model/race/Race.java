@@ -15,7 +15,7 @@ public abstract class Race {
     private int agility;
     private int concentration;
 
-    public Race(RaceStartDatums startDatums, String professionName) {
+    protected Race(RaceStartDatums startDatums, String professionName) {
         this.professionName = professionName;
         this.raceName = startDatums.getRaceName();
         this.charisma = startDatums.getCharisma();

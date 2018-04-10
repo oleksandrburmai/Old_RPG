@@ -5,8 +5,7 @@ import model.race.RaceStartDatums;
 
 public class Elf extends Race {
 
-
-    public Elf(String professionName) {
+    protected Elf(String professionName) {
         super(RaceStartDatums.ELF, professionName);
     }
 }

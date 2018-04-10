@@ -5,7 +5,7 @@ import model.race.RaceStartDatums;
 
 public class Dwarf extends Race {
 
-    public Dwarf(String professionName) {
+    protected Dwarf(String professionName) {
         super(RaceStartDatums.DWARF, professionName);
     }
 }
