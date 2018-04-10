@@ -49,5 +49,5 @@ Warrior abilities:
 3. build maven project ```mvn package```.
 4. Enter in terminal this command:
 ```
- java -cp target/alexgame-1.0-SNAPSHOT.jar Main
+ java -cp target/alexgame-1.0-SNAPSHOT.jar App
 ```
