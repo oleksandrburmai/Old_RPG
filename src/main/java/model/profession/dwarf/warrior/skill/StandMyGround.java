@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class StandMyGround implements Ability {
 
     private final String NAME = "Stand my ground";
-    private final int COLDOWN = 4;
+    private final int COOLDOWN = 4;
     private final int CONSUMPTION = 20;
 
     @Override

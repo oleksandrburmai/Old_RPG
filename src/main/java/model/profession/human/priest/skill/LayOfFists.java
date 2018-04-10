@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class LayOfFists implements Ability {
 
     private final String NAME = "Lay of fists";
-    private final int COLDOWN = 3;
+    private final int COOLDOWN = 3;
     private final int CONSUMPTION = 10;
 
     @Override

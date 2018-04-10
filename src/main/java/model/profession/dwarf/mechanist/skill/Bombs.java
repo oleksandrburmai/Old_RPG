@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class Bombs implements Ability {
 
     private final String NAME = "Bombs";
-    private final int COLDOWN = 2;
+    private final int COOLDOWN = 2;
     private final int CONSUMPTION = 25;
 
     @Override

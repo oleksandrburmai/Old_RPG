@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class SpellShield implements Ability {
 
     private final String NAME = "Spell shield";
-    private final int COLDOWN = 2;
+    private final int COOLDOWN = 2;
     private final int CONSUMPTION = 15;
 
     @Override

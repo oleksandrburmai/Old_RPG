@@ -4,10 +4,10 @@ import lombok.Getter;
 import model.profession.Ability;
 
 @Getter
-public class WhrilingAxe implements Ability {
+public class WhirlingAxe implements Ability {
 
-    private final String NAME = "Whriling axe";
-    private final int COLDOWN = 2;
+    private final String NAME = "Whirling axe";
+    private final int COOLDOWN = 2;
     private final int CONSUMPTION = 30;
 
     @Override

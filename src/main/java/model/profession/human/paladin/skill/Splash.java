@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class Splash implements Ability {
 
     private final String NAME = "Splash";
-    private final int COLDOWN = 2;
+    private final int COOLDOWN = 2;
     private final int CONSUMPTION = 20;
 
     @Override

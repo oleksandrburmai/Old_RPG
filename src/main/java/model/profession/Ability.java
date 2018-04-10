@@ -4,7 +4,7 @@ public interface Ability {
 
     String getNAME();
 
-    int getCOLDOWN();
+    int getCOOLDOWN();
 
     int getCONSUMPTION();
 

@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class BullsEye implements Ability {
 
     private final String NAME = "Bulls eye";
-    private final int COLDOWN = 3;
+    private final int COOLDOWN = 3;
     private final int CONSUMPTION = 40;
 
     @Override

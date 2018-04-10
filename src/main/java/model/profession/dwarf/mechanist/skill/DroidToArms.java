@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class DroidToArms implements Ability {
 
     private final String NAME = "Droid to arms";
-    private final int COLDOWN = 3;
+    private final int COOLDOWN = 3;
     private final int CONSUMPTION = 25;
 
     @Override

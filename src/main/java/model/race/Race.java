@@ -15,13 +15,13 @@ public abstract class Race {
     private int agility;
     private int concentration;
 
-    public Race(RaceStartCharacteristics raceStartCharacteristic, String professionName) {
+    public Race(RaceStartDatums startDatums, String professionName) {
         this.professionName = professionName;
-        this.raceName = raceStartCharacteristic.getRaceName();
-        this.charisma = raceStartCharacteristic.getCharisma();
-        this.stamina = raceStartCharacteristic.getStamina();
-        this.intellect = raceStartCharacteristic.getIntellect();
-        this.agility = raceStartCharacteristic.getAgility();
-        this.concentration = raceStartCharacteristic.getConcentration();
+        this.raceName = startDatums.getRaceName();
+        this.charisma = startDatums.getCharisma();
+        this.stamina = startDatums.getStamina();
+        this.intellect = startDatums.getIntellect();
+        this.agility = startDatums.getAgility();
+        this.concentration = startDatums.getConcentration();
     }
 }

@@ -4,10 +4,10 @@ import lombok.Getter;
 import model.profession.Ability;
 
 @Getter
-public class Dispell implements Ability {
+public class Dispel implements Ability {
 
-    private final String NAME = "Dispell";
-    private final int COLDOWN = 3;
+    private final String NAME = "Dispel";
+    private final int COOLDOWN = 3;
     private final int CONSUMPTION = 20;
 
     @Override

@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class Fireball implements Ability {
 
     private final String NAME = "Fireball";
-    private final int COLDOWN = 3;
+    private final int COOLDOWN = 3;
     private final int CONSUMPTION = 45;
 
     @Override

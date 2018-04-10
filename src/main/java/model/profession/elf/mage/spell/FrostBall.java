@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class FrostBall implements Ability {
 
     private final String NAME = "Frost ball";
-    private final int COLDOWN = 1;
+    private final int COOLDOWN = 1;
     private final int CONSUMPTION = 20;
 
     @Override

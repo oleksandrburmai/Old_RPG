@@ -3,7 +3,7 @@ package model.race;
 import lombok.Getter;
 
 @Getter
-public enum RaceStartCharacteristics {
+public enum RaceStartDatums {
 
     HUMAN("Human", 10, 30, 20, 15, 15), ELF("Elf", 15, 10, 25, 22, 18), DWARF("Dwarf", 5, 45, 15, 20, 5);
 
@@ -15,8 +15,8 @@ public enum RaceStartCharacteristics {
     private int concentration;
 
 
-    RaceStartCharacteristics(String raceName, int charisma, int stamina, int intellect, int agility,
-                             int concentration) {
+    RaceStartDatums(String raceName, int charisma, int stamina, int intellect, int agility,
+                    int concentration) {
         this.raceName = raceName;
         this.charisma = charisma;
         this.stamina = stamina;

@@ -7,7 +7,7 @@ import model.profession.Ability;
 public class Multishot implements Ability {
 
     private final String NAME = "Multishot";
-    private final int COLDOWN = 2;
+    private final int COOLDOWN = 2;
     private final int CONSUMPTION = 30;
 
     @Override
