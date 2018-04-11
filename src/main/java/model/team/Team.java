@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import model.hero.Hero;
 import model.hero.HeroRanks;
+import model.hero.StatUtil;
 import model.profession.ProfessionMap;
 import util.input.InputData;
 
@@ -18,9 +19,11 @@ public class Team {
     public void createTeam() {
         Hero[] heroes = new Hero[TEAM_MEMBERS];
         heroes[0] = createLiederHero();
+        StatUtil.addHeroStat(heroes[0]);
         for (int i = 1; i < TEAM_MEMBERS; i++) {
             System.out.println("Create " + i + " comrade hero");
             heroes[i] = createComradeHero();
+            StatUtil.addHeroStat(heroes[i]);
         }
         this.heroes = heroes;
     }

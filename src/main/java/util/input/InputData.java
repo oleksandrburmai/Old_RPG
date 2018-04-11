@@ -4,6 +4,8 @@ import model.profession.MapKeys;
 import model.profession.ProfessionMap;
 import util.ScannerUtil;
 
+import java.util.ArrayList;
+
 public class InputData {
 
     public static String getRaceName() {
@@ -12,9 +14,8 @@ public class InputData {
             String race = ScannerUtil.getString();
             if (ProfessionMap.getProfession().containsKey(race.toLowerCase())) {
                 return race;
-            } else {
-                System.out.println("Race chosen incorrectly. Try again");
             }
+            System.out.println("Race chosen incorrectly. Try again");
         }
     }
 
@@ -26,14 +27,39 @@ public class InputData {
             String profession = ScannerUtil.getString();
             if (ProfessionMap.getProfession().get(raceName).containsKey(profession.toLowerCase())) {
                 return profession;
-            } else {
-                System.out.println("Choice wrong profession. Try again");
             }
+            System.out.println("Choice wrong profession. Try again");
         }
     }
 
     public static String getHeroName() {
         System.out.println("Enter hero name");
         return ScannerUtil.getString();
+    }
+
+    public static String choiceStat() {
+        ArrayList<String> stat = new ArrayList();
+        for (int i = 1; i <= 5; i++) {
+            stat.add(String.valueOf(i));
+        }
+        System.out.println("Enter characteristic which you want to increase:");
+        while (true) {
+            String selectedStat = ScannerUtil.getString();
+            if (stat.contains(selectedStat)) {
+                return selectedStat;
+            }
+            System.out.println("You choice wrong characteristic. Try again.");
+        }
+    }
+
+    public static int numberOfPoint(int statPoint) {
+        System.out.println("Enter number of points for distribution:");
+        while (true) {
+            int distributedPoint = ScannerUtil.getInt();
+            if (statPoint >= distributedPoint) {
+                return distributedPoint;
+            }
+            System.out.println("You want to distribute to many points. Try again.");
+        }
     }
 }

@@ -37,4 +37,10 @@ public class OutPutData {
                 "point, 1 turn cd discretion per 25 points.\n");
     }
 
+    public static void printStatDistributeInfo(int statPoint) {
+        System.out.println("You have " + statPoint + " characteristics that can be distributed");
+        System.out.println("You can distribute this point to:\n1 - Stamina, 2 - Agility, 3 - Charisma, 4 - Intellect," +
+                " 5 - Concentration");
+    }
+
 }
