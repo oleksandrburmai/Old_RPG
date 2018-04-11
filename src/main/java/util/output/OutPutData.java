@@ -11,10 +11,11 @@ public class OutPutData {
                 team.getHeroes()[i].getProfessionName() + ".");
         System.out.println("Health - " + team.getHeroes()[i].getHealth() + "." + " Mana - " +
                 team.getHeroes()[i].getManaPoint() + "." + " Rage - " + team.getHeroes()[i].getRagePoint() + ".");
-        System.out.println("Stamina - " + team.getHeroes()[i].getStamina() + "." + " Agility - " +
-                team.getHeroes()[i].getAgility() + "." + " Charisma - " + team.getHeroes()[i].getCharisma() + "." +
-                " Intellect - " + team.getHeroes()[i].getIntellect() + "." +
-                " Concentration - " + team.getHeroes()[i].getConcentration() + ".\n");
+        System.out.println("Stamina - " + team.getHeroes()[i].getHeroStat().getStamina() + "." + " Agility - " +
+                team.getHeroes()[i].getHeroStat().getAgility() + "." + " Charisma - " +
+                team.getHeroes()[i].getHeroStat().getCharisma() + "." + " Intellect - " +
+                team.getHeroes()[i].getHeroStat().getIntellect() + "." + " Concentration - " +
+                team.getHeroes()[i].getHeroStat().getConcentration() + ".\n");
     }
 
     public static void printRaceInfo() {

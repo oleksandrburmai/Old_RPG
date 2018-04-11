@@ -2,13 +2,20 @@ package model.profession.dwarf.mechanist.skill;
 
 import lombok.Getter;
 import model.profession.Ability;
+import model.profession.dwarf.mechanist.MechanistAbilitiesStat;
 
 @Getter
 public class DroidToArms implements Ability {
 
-    private final String NAME = "Droid to arms";
-    private final int COOLDOWN = 3;
-    private final int CONSUMPTION = 25;
+    private String name;
+    private int cooldown;
+    private int consumption;
+
+    DroidToArms() {
+        this.name = MechanistAbilitiesStat.DROIDTOARMS.getAbilityName();
+        this.cooldown = MechanistAbilitiesStat.DROIDTOARMS.getCooldown();
+        this.consumption = MechanistAbilitiesStat.DROIDTOARMS.getConsumption();
+    }
 
     @Override
     public void getAbility() {

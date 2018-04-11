@@ -13,9 +13,9 @@ public class ProfessionMap {
     public static Map<String, Map<String, Race>> getProfession() {
         Map<String, Map<String, Race>> profession = new HashMap<>();
 
-        profession.put("elf", new ElfProfessionMap().getElfProfession());
-        profession.put("dwarf", new DwarfProfessionMap().getDwarfProfession());
-        profession.put("human", new HumanProfessionMap().getHumanProfession());
+        profession.put(MapKeys.ONE.getKey(), new ElfProfessionMap().getElfProfession());
+        profession.put(MapKeys.TWO.getKey(), new DwarfProfessionMap().getDwarfProfession());
+        profession.put(MapKeys.THREE.getKey(), new HumanProfessionMap().getHumanProfession());
 
         return profession;
     }

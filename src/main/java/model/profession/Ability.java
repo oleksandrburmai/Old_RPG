@@ -2,11 +2,11 @@ package model.profession;
 
 public interface Ability {
 
-    String getNAME();
+    String getName();
 
-    int getCOOLDOWN();
+    int getCooldown();
 
-    int getCONSUMPTION();
+    int getConsumption();
 
     void getAbility();
 

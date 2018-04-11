@@ -8,49 +8,23 @@ import model.race.Race;
 @Setter
 public class Hero {
 
-    private final double START_HEALTH = 100.0;
-    private final double START_MANA_POINT = 100.0;
-    private final double START_RAGE_POINT = 100.0;
-
     private String heroName;
     private String raceName;
     private String professionName;
-    private int charisma;
-    private int stamina;
-    private int intellect;
-    private int agility;
-    private int concentration;
+    private HeroStat heroStat;
     private double health;
     private double manaPoint;
     private double ragePoint;
     private HeroRanks heroRank;
 
-
     public Hero(String heroName, HeroRanks rank, Race race) {
         this.heroName = heroName;
         this.raceName = race.getRaceName();
         this.professionName = race.getProfessionName();
-        this.charisma = race.getCharisma();
-        this.stamina = race.getStamina();
-        this.intellect = race.getIntellect();
-        this.agility = race.getAgility();
-        this.concentration = race.getConcentration();
+        this.heroStat = new HeroStat().setHeroStat(race);
         this.heroRank = rank;
-        this.health = calculateHealth();
-        this.manaPoint = calculateMana();
-        this.ragePoint = calculateRage();
+        this.health = StatUtil.calculateHealth(this.heroStat);
+        this.manaPoint = StatUtil.calculateMana(this.heroStat);
+        this.ragePoint = StatUtil.calculateRage(this.heroStat);
     }
-
-    private double calculateHealth() {
-        return START_HEALTH + this.stamina * 2;
-    }
-
-    private double calculateMana() {
-        return START_MANA_POINT + this.intellect * 2;
-    }
-
-    private double calculateRage() {
-        return START_RAGE_POINT + this.agility * 4;
-    }
-
 }

@@ -5,16 +5,16 @@ import model.profession.Ability;
 import model.profession.elf.mage.MageAbilitiesStats;
 
 @Getter
-public class FrostBall implements Ability {
+public class FireBall implements Ability {
 
     private String name;
     private int cooldown;
     private int consumption;
 
-    FrostBall() {
-        this.name = MageAbilitiesStats.FROSTBALL.getAbilityName();
-        this.cooldown = MageAbilitiesStats.FROSTBALL.getCooldown();
-        this.consumption = MageAbilitiesStats.FROSTBALL.getConsumption();
+    FireBall() {
+        this.name = MageAbilitiesStats.FIREBALL.getAbilityName();
+        this.cooldown = MageAbilitiesStats.FIREBALL.getCooldown();
+        this.consumption = MageAbilitiesStats.FIREBALL.getConsumption();
     }
 
 

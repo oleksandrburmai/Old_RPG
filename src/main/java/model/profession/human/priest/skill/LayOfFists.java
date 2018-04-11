@@ -2,13 +2,20 @@ package model.profession.human.priest.skill;
 
 import lombok.Getter;
 import model.profession.Ability;
+import model.profession.human.priest.PriestAbilitiesStats;
 
 @Getter
 public class LayOfFists implements Ability {
 
-    private final String NAME = "Lay of fists";
-    private final int COOLDOWN = 3;
-    private final int CONSUMPTION = 10;
+    private String name;
+    private int cooldown;
+    private int consumption;
+
+    LayOfFists() {
+        this.name = PriestAbilitiesStats.LAYOFFISTS.getAbilityName();
+        this.cooldown = PriestAbilitiesStats.LAYOFFISTS.getCooldown();
+        this.consumption = PriestAbilitiesStats.LAYOFFISTS.getConsumption();
+    }
 
     @Override
     public void getAbility() {

@@ -2,7 +2,7 @@ package util;
 
 import java.util.Scanner;
 
-public class ScannerUtil {
+public final class ScannerUtil {
 
     private static Scanner scanner;
 

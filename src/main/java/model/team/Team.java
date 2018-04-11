@@ -10,7 +10,8 @@ import util.input.InputData;
 @Getter
 @Setter
 public class Team {
-    private final int TEAM_MEMBERS = 3;
+
+    private static final int TEAM_MEMBERS = 3;
 
     private Hero[] heroes;
 

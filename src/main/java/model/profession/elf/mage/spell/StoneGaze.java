@@ -2,13 +2,21 @@ package model.profession.elf.mage.spell;
 
 import lombok.Getter;
 import model.profession.Ability;
+import model.profession.elf.mage.MageAbilitiesStats;
 
 @Getter
 public class StoneGaze implements Ability {
 
-    private final String NAME = "Stone gaze";
-    private final int COOLDOWN = 4;
-    private final int CONSUMPTION = 20;
+    private String name;
+    private int cooldown;
+    private int consumption;
+
+    StoneGaze() {
+        this.name = MageAbilitiesStats.STONEGAZE.getAbilityName();
+        this.cooldown = MageAbilitiesStats.STONEGAZE.getCooldown();
+        this.consumption = MageAbilitiesStats.STONEGAZE.getConsumption();
+    }
+
 
     @Override
     public void getAbility() {
