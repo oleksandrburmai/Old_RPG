@@ -1,6 +1,6 @@
 package model.hero;
 
-public final class StatUtil {
+final class StatUtil {
 
     private static final double START_HEALTH = 100.0;
     private static final double START_MANA_POINT = 100.0;

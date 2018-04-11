@@ -3,9 +3,9 @@ package model.profession.elf.gunslinger;
 import model.profession.ProfessionName;
 import model.race.type.Elf;
 
-public class Gunslinger extends Elf {
+public class ElfGunslinger extends Elf {
 
-    public Gunslinger() {
+    public ElfGunslinger() {
         super(ProfessionName.GUNSLINGER.getProfessionName());
     }
 }

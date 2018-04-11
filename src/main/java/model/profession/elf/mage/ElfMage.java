@@ -3,9 +3,9 @@ package model.profession.elf.mage;
 import model.profession.ProfessionName;
 import model.race.type.Elf;
 
-public class Mage extends Elf {
+public class ElfMage extends Elf {
 
-    public Mage() {
+    public ElfMage() {
         super(ProfessionName.MAGE.getProfessionName());
     }
 }

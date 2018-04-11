@@ -1,11 +1,9 @@
 package model.hero;
 
 import lombok.Getter;
-import lombok.Setter;
 import model.race.Race;
 
 @Getter
-@Setter
 public class HeroStat {
 
     private int charisma;
@@ -24,4 +22,23 @@ public class HeroStat {
         return heroStat;
     }
 
+    public void setCharisma(int charisma) {
+        this.charisma = this.charisma + charisma;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = this.stamina + stamina;
+    }
+
+    public void setIntellect(int intellect) {
+        this.intellect = this.intellect + intellect;
+    }
+
+    public void setAgility(int agility) {
+        this.agility = this.agility + agility;
+    }
+
+    public void setConcentration(int concentration) {
+        this.concentration = this.concentration + concentration;
+    }
 }

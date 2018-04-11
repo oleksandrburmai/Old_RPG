@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public enum MechanistAbilitiesStat {
 
-    BOMBS("Bombs", 2, 25), DROIDTOARMS("Droid to arms", 3, 25);
+    BOMBS("Bombs", 2, 25), DROIDTOARMS("Droid to arms", 3, 30);
 
     private String abilityName;
     private int cooldown;

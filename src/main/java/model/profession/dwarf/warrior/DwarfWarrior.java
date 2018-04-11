@@ -3,9 +3,9 @@ package model.profession.dwarf.warrior;
 import model.profession.ProfessionName;
 import model.race.type.Dwarf;
 
-public class Warrior extends Dwarf {
+public class DwarfWarrior extends Dwarf {
 
-    public Warrior() {
+    public DwarfWarrior() {
         super(ProfessionName.WARRIOR.getProfessionName());
     }
 }

@@ -36,5 +36,4 @@ public class InputData {
         System.out.println("Enter hero name");
         return ScannerUtil.getString();
     }
-
 }

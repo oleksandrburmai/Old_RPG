@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public enum PaladinAbilitiesStats {
 
-    RUSH("Rush", 2, 20), SPLASH("Splash", 2, 20);
+    RUSH("Rush", 1, 25), SPLASH("Splash", 2, 20);
 
     private String abilityName;
     private int cooldown;

@@ -1,27 +1,19 @@
 package model.race;
 
-import lombok.Getter;
-import lombok.Setter;
+public interface Race {
 
-@Getter
-@Setter
-public abstract class Race {
+    String getRaceName();
 
-    private String raceName;
-    private String professionName;
-    private int charisma;
-    private int stamina;
-    private int intellect;
-    private int agility;
-    private int concentration;
+    String getProfessionName();
 
-    protected Race(RaceStartDatums startDatums, String professionName) {
-        this.professionName = professionName;
-        this.raceName = startDatums.getRaceName();
-        this.charisma = startDatums.getCharisma();
-        this.stamina = startDatums.getStamina();
-        this.intellect = startDatums.getIntellect();
-        this.agility = startDatums.getAgility();
-        this.concentration = startDatums.getConcentration();
-    }
+    int getCharisma();
+
+    int getStamina();
+
+    int getIntellect();
+
+    int getAgility();
+
+    int getConcentration();
+
 }

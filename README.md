@@ -11,7 +11,8 @@ you hero have  profession.
 Each profession have some different abilities.
 
 Priest abilities:
--	Hand of God(25 mp), cd 2 turns, heals 20 hits (can be cast on itself or other unit, if casts on UNDEAD deal damage instead of heal)
+-	Hand of God(25 mp), cd 2 turns, heals 20 hits (can be cast on itself or other unit, if casts on UNDEAD deal damage 
+instead of heal)
 -	Battle trance(65 mp), cd 4 turns, gain immunity for next turn
 
 Paladin abilities:
@@ -35,12 +36,14 @@ Gunslinger abilities:
 Mechanist abilities:
 
 -	Bombs! (25rp) – throw a bomb that hits 2 enemies and deal 2d6 dmg to each, cd 2 turns
--	Droid to arms(25 rp) – crate droid that attack random enemy with 2d6 every turn, lasts 3 turns, cd 5 turns, has 50 HP
+-	Droid to arms(25 rp) – crate droid that attack random enemy with 2d6 every turn, lasts 3 turns, cd 5 turns, has 
+50 HP
 
 
 Warrior abilities:
 
--	Whirling Axe(30 rp) – throw axe into nearest enemy, deal additional 2d6 damage, cd 2 turns, apply regular attack to this unit
+-	Whirling Axe(30 rp) – throw axe into nearest enemy, deal additional 2d6 damage, cd 2 turns, apply regular attack 
+to this unit
 -	Stand my ground(20 rp), cd 4 turns, gain 50 HP shield for 2 turns
 
 # If you want play this game you need to do next steps:
