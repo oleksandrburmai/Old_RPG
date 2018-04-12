@@ -56,10 +56,10 @@ public class InputData {
         System.out.println("Enter number of points for distribution:");
         while (true) {
             int distributedPoint = ScannerUtil.getInt();
-            if (statPoint >= distributedPoint) {
+            if (statPoint >= distributedPoint && distributedPoint > 0) {
                 return distributedPoint;
             }
-            System.out.println("You want to distribute to many points. Try again.");
+            System.out.println("You input wrong number of point to distribute. Try again.");
         }
     }
 }
