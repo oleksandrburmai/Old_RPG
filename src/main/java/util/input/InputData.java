@@ -5,6 +5,7 @@ import model.profession.ProfessionMap;
 import util.ScannerUtil;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class InputData {
 
@@ -38,7 +39,7 @@ public class InputData {
     }
 
     public static String choiceStat() {
-        ArrayList<String> stat = new ArrayList();
+        List<String> stat = new ArrayList<>();
         for (int i = 1; i <= 5; i++) {
             stat.add(String.valueOf(i));
         }

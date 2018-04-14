@@ -1,7 +1,11 @@
 package model.hero;
 
+import model.profession.MapKeys;
 import util.input.InputData;
 import util.output.OutPutData;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public final class StatUtil {
 
@@ -40,22 +44,14 @@ public final class StatUtil {
     }
 
     private static void choiceStat(Hero hero, String selectedStat, int point) {
-        switch (selectedStat) {
-            case "1":
-                hero.getHeroStat().setStamina(point);
-                break;
-            case "2":
-                hero.getHeroStat().setAgility(point);
-                break;
-            case "3":
-                hero.getHeroStat().setCharisma(point);
-                break;
-            case "4":
-                hero.getHeroStat().setIntellect(point);
-                break;
-            case "5":
-                hero.getHeroStat().setConcentration(point);
-                break;
+        Map<String, Void> statMap = new HashMap();
+        statMap.put(MapKeys.ONE.getKey(), hero.getHeroStat().setStamina(point));
+        statMap.put(MapKeys.TWO.getKey(), hero.getHeroStat().setAgility(point));
+        statMap.put(MapKeys.THREE.getKey(), hero.getHeroStat().setCharisma(point));
+        statMap.put(MapKeys.FOUR.getKey(), hero.getHeroStat().setIntellect(point));
+        statMap.put(MapKeys.FIVE.getKey(), hero.getHeroStat().setConcentration(point));
+        if (statMap.containsKey(selectedStat)) {
+            statMap.get(selectedStat);
         }
     }
 }

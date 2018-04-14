@@ -7,7 +7,7 @@ class Game {
         OutPutData.printDatumInfo();
         OutPutData.printRaceInfo();
         team.createTeam();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < team.getHeroes().length; i++) {
             OutPutData.printHeroInfo(team, i);
         }
     }

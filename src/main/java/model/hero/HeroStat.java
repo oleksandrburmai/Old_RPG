@@ -22,23 +22,28 @@ public class HeroStat {
         return heroStat;
     }
 
-    public void setCharisma(int charisma) {
+    public Void setCharisma(int charisma) {
         this.charisma = this.charisma + charisma;
+        return null;
     }
 
-    public void setStamina(int stamina) {
+    public Void setStamina(int stamina) {
         this.stamina = this.stamina + stamina;
+        return null;
     }
 
-    public void setIntellect(int intellect) {
+    public Void setIntellect(int intellect) {
         this.intellect = this.intellect + intellect;
+        return null;
     }
 
-    public void setAgility(int agility) {
+    public Void setAgility(int agility) {
         this.agility = this.agility + agility;
+        return null;
     }
 
-    public void setConcentration(int concentration) {
+    public Void setConcentration(int concentration) {
         this.concentration = this.concentration + concentration;
+        return null;
     }
 }
