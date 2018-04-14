@@ -1,11 +1,9 @@
 package util.input;
 
+import model.hero.StatUtil;
 import model.profession.MapKeys;
 import model.profession.ProfessionMap;
 import util.ScannerUtil;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class InputData {
 
@@ -39,14 +37,10 @@ public class InputData {
     }
 
     public static String choiceStat() {
-        List<String> stat = new ArrayList<>();
-        for (int i = 1; i <= 5; i++) {
-            stat.add(String.valueOf(i));
-        }
         System.out.println("Enter characteristic which you want to increase:");
         while (true) {
             String selectedStat = ScannerUtil.getString();
-            if (stat.contains(selectedStat)) {
+            if (StatUtil.statKeyList().contains(selectedStat)) {
                 return selectedStat;
             }
             System.out.println("You choice wrong characteristic. Try again.");

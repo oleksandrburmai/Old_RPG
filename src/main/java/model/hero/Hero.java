@@ -21,7 +21,7 @@ public class Hero {
         this.heroName = heroName;
         this.raceName = race.getRaceName();
         this.professionName = race.getProfessionName();
-        this.heroStat = new HeroStat().setHeroStat(race);
+        this.heroStat = new HeroStat(race);
         this.heroRank = rank;
         this.health = StatUtil.calculateHealth(this.heroStat);
         this.manaPoint = StatUtil.calculateMana(this.heroStat);

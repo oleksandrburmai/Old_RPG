@@ -5,6 +5,8 @@ import util.input.InputData;
 import util.output.OutPutData;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 public final class StatUtil {
@@ -13,8 +15,7 @@ public final class StatUtil {
     private static final double START_MANA_POINT = 100.0;
     private static final double START_RAGE_POINT = 100.0;
 
-    private StatUtil() throws IllegalStateException {
-        throw new IllegalStateException("Can't create instance of StatUtil");
+    private StatUtil() {
     }
 
     public static double calculateHealth(HeroStat heroStat) {
@@ -44,7 +45,7 @@ public final class StatUtil {
     }
 
     private static void choiceStat(Hero hero, String selectedStat, int point) {
-        Map<String, Void> statMap = new HashMap();
+        Map<String, Void> statMap = new HashMap<>();
         statMap.put(MapKeys.ONE.getKey(), hero.getHeroStat().setStamina(point));
         statMap.put(MapKeys.TWO.getKey(), hero.getHeroStat().setAgility(point));
         statMap.put(MapKeys.THREE.getKey(), hero.getHeroStat().setCharisma(point));
@@ -53,5 +54,15 @@ public final class StatUtil {
         if (statMap.containsKey(selectedStat)) {
             statMap.get(selectedStat);
         }
+    }
+
+    public static List<String> statKeyList() {
+        List<String> statKeyList = new LinkedList<>();
+        statKeyList.add(MapKeys.ONE.getKey());
+        statKeyList.add(MapKeys.TWO.getKey());
+        statKeyList.add(MapKeys.THREE.getKey());
+        statKeyList.add(MapKeys.FOUR.getKey());
+        statKeyList.add(MapKeys.FIVE.getKey());
+        return statKeyList;
     }
 }

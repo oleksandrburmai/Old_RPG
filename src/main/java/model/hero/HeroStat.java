@@ -12,14 +12,12 @@ public class HeroStat {
     private int agility;
     private int concentration;
 
-    public HeroStat setHeroStat(Race race) {
-        HeroStat heroStat = new HeroStat();
-        heroStat.setCharisma(race.getCharisma());
-        heroStat.setStamina(race.getStamina());
-        heroStat.setIntellect(race.getIntellect());
-        heroStat.setAgility(race.getAgility());
-        heroStat.setConcentration(race.getConcentration());
-        return heroStat;
+    HeroStat(Race race) {
+        this.charisma = race.getCharisma();
+        this.stamina = race.getStamina();
+        this.intellect = race.getIntellect();
+        this.agility = race.getAgility();
+        this.concentration = race.getConcentration();
     }
 
     public Void setCharisma(int charisma) {
