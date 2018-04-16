@@ -17,7 +17,7 @@ public class Team {
     private Hero[] heroes;
 
     public void createTeam() {
-        Hero[] heroes = new Hero[TEAM_MEMBERS];
+        this.heroes = new Hero[TEAM_MEMBERS];
         heroes[0] = createLiederHero();
         StatUtil.addHeroStat(heroes[0]);
         for (int i = 1; i < TEAM_MEMBERS; i++) {
@@ -25,7 +25,6 @@ public class Team {
             heroes[i] = createComradeHero();
             StatUtil.addHeroStat(heroes[i]);
         }
-        this.heroes = heroes;
     }
 
     private Hero createComradeHero() {
