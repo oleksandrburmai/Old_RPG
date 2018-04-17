@@ -19,6 +19,6 @@ public class StandMyGround implements Ability {
 
     @Override
     public void getAbility() {
-
+        // Do nothing because now this operation is not supported.
     }
 }

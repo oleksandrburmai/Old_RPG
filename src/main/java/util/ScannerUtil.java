@@ -23,7 +23,7 @@ public final class ScannerUtil {
     public static int getInt() {
         while (true) {
             String str = getString();
-            if (str.matches("\\d+\\d")) {
+            if (str.matches("\\d+")) {
                 return Integer.parseInt(str);
             } else {
                 System.out.println("You not input number. Try again.");
